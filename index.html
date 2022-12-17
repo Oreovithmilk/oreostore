@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oreo Store|Games Top Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+        <!--Header-------------------------------------------->
+        <nav>
+            <div class="container">
+                <div class="left-section">           
+                     <a href="#"><img class="store-name-nav" src="images/store-name.png" ></a>
+                </div>
+                <div class="right-section">
+                    <ul id="nav-links" class="main-menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">GAME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                    <div class="search">
+                        <input class="main-search-bar" type="text" placeholder="Search...">
+                        <a href="#">
+                            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <i class="search-icon fa-solid fa-magnifying-glass search-icon-hide"></i>
+                    </a>
+                    <a href="#">
+                        <i id="hamburger-menu" class="fa-solid fa-bars"></i>
+                    </a> 
+    
+                        <!-- <a href="checkout.html">
+                            <img src="images/shopping-bag (1).png">
+                        </a> -->
+                </div>
+            </div>
+        </nav>
+
+        <!--Main Body------------------------------------------->
+        <main class="main-homepage">
+        <div class="container">
+                <img class="home-banner" src="images/homepage-banner2.jpg" alt="">
+            
+                <div class="mobile-game-section">
+                    <h3 class="section-title">Mobile Game</h3>
+                    <div class="cards-container">
+                        <a href="mlbb.html">
+                            <div class="card">
+                                <img src="images/mlbb.png" alt="">
+                                <h5>Mobile Legends Bang Bang</h5>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card">
+                                <img src="images/genshin.webp" alt="">
+                                <h5>Genshin Impact</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            
+        </div>
+        </main>
+        <!--Footer------------->
+            <footer>
+                <div class="container">
+                        <div class="card payment-head">
+                        <h4>Payment Methods </h4>
+                        <ul class="payment">
+                            <li><a href="#"><img src="images/Google.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/Paytm.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/PhonePe.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/upi.svg" alt=""></a></li>
+                        </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Our Store</h3>
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditons</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                            </ul>
+                         </div>
+                         <div class="card">
+                            <h3>Support</h3>
+                            <ul>
+                                <li><a href="#">E-mail</a></li>
+                                <li><a href="#">WhatsApp</a></li>
+                            </ul>
+                         </div>
+                         <img class="store-logo" src="images/store-name.png" >
+
+                </div>
+            </footer>
+        
+        
+
+    </div>
+    <script src="https://kit.fontawesome.com/7de94b01f8.js" crossorigin="anonymous"></script>
+    <script>
+        let navLinks = document.getElementById('nav-links');
+        let hamburger = document.getElementById('hamburger-menu').addEventListener('click', toggleMenu);
+        function toggleMenu(){
+            navLinks.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
